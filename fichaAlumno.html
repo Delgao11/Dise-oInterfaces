@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- CSS FILES -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400;700;900&display=swap" rel="stylesheet">
+
+    <!-- Main css -->
+    <link rel="stylesheet" href="css/estilosHome.css">
+    <link href="css/estilosCatalogo.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lora|Merriweather:300,400" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/63e77c34c9.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/estiloAdmin.css">
+
+    
+</head>
+<body>
+    
+    <div id="wrapper">
+        <table align='center' cellpadding=1 id="data_table" border=0>
+            <tr>
+                <th>NOMBRE</th>
+                <th>APELLIDOS</th>
+                <th>CONTRASEÑA</th>
+                <th>DNI</th>
+                <th>FECHA NACIMIENTO</th>
+                <th>EMAIL</th>
+                <th>TELEFONO</th>
+                <th>EMPRESA PRACTICAS</th>
+                <th>TUTOR</th>
+                <th>HORAS DUAL</th>
+                <th>HORA FCT</th>
+                <th>OBSERVACIONES</th>
+            </tr>
+
+            <tr id="row1">
+                <td id="nombre_row1">Alberto</td>
+                <td id="apellidos_row1">Fernandez Baena</td>
+                <td id="contraseña_row1">1234</td>
+                <td id="dni_row1">77237746C</td>
+                <td id="nacimiento_row1">12/09/2003</td>
+                <td id="email_row1">albertofernandezbaena18@gmail.com</td>
+                <td id="telefono_row1">671397887</td>
+                <td id="empresa_row1">Google</td>
+                <td id="tutor_row1">Francisco</td>
+                <td id="dual_row1">240</td>
+                <td id="fct_row1">120</td>
+                <td id="observaciones_row1">Este alumno es puntual y trabaja muy bien en equipo</td>
+                <td class="acciones">
+                    <button class="edit" onclick="edit_row('1');" id="edit_button1"><i class="fa-solid fa-pen-to-square"></i></button>
+                    <button class="save" onclick="save_row('1');" id="save_button1"><i class="fa-solid fa-floppy-disk"></i></button>
+                    <button class="delete" onclick="delete_row('1');"><i class="fa-solid fa-trash"></i></button>
+                </td>
+            </tr>
+
+            <tr id="nuevos_campos">
+                <td><input type="text" id="nuevo_nombre"></td>
+                <td><input type="text" id="nuevo_apellidos"></td>
+                <td><input type="text" id="nueva_contraseña"></td>
+                <td><input type="text" id="nuevo_dni"></td>
+                <td><input type="date" id="nuevo_nacimiento"></td>
+                <td><input type="text" id="nuevo_email"></td>
+                <td><input type="number" id="nueva_telefono"></td>
+                <td><input type="text" id="nueva_empresa"></td>
+                <td><input type="text" id="nuevo_tutor"></td>
+                <td><input type="number" id="nuevo_dual"></td>
+                <td><input type="number" id="nueva_fct"></td>
+                <td><input type="text" id="nueva_observaciones"></td>
+                <td><button class="add" onclick="add_row();"><i class="fa-solid fa-plus"></i></button></td>
+            </tr>
+
+        </table>
+    </div>
+
+    <script src="js/appAdmin.js"></script>
+
+    
+</body>
+</html>

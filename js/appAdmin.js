@@ -42,10 +42,26 @@ function save_row(no) {
     var apellidos_val = document.getElementById("apellidos_text" + no).value;
     var contraseña_val = document.getElementById("contraseña_text" + no).value;
     var dni_val = document.getElementById("dni_text" + no).value;
+    var nacimiento_val = document.getElementById("nacimiento_text" + no).value;
+    var email_val = document.getElementById("email_text" + no).value;
+    var telefono_val = document.getElementById("telefono_text" + no).value;
+    var empresa_val = document.getElementById("empresa_text" + no).value;
+    var tutor_val = document.getElementById("tutor_text" + no).value;
+    var dual_val = document.getElementById("dual_text" + no).value;
+    var fct_val = document.getElementById("fct_text").value;
+    var observaciones_val = document.getElementById("observaciones_text" + no).value
     document.getElementById("nombre_row" + no).innerHTML = nombre_val;
-    document.getElementById("precio_row" + no).innerHTML = precio_val;
-    document.getElementById("cantidad_row" + no).innerHTML = cantidad_val;
-    document.getElementById("fecha_row" + no).innerHTML = fecha_val;
+    document.getElementById("precio_row" + no).innerHTML = apellidos_val;
+    document.getElementById("cantidad_row" + no).innerHTML = contraseña_val;
+    document.getElementById("fecha_row" + no).innerHTML = dni_val;
+    document.getElementById("nacimiento_row" + no).innerHTML = nacimiento_val;
+    document.getElementById("email_row" + no).innerHTML = email_val;
+    document.getElementById("telefono_row" + no).innerHTML = telefono_val;
+    document.getElementById("empresa_row" + no).innerHTML = empresa_val;
+    document.getElementById("tutor_row" + no).innerHTML = tutor_val;
+    document.getElementById("dual_row" + no).innerHTML = dual_val;
+    document.getElementById("fct_row" + no).innerHTML = fct_val;
+    document.getElementById("observaciones_row" + no).innerHTML = observaciones_val;
 }
 
 function delete_row(no) {
@@ -54,17 +70,37 @@ function delete_row(no) {
 
 function add_row() {
     var nuevo_nombre = document.getElementById("nuevo_nombre").value;
-    var nuevo_precio = document.getElementById("nuevo_precio").value;
-    var nueva_cantidad = document.getElementById("nueva_cantidad").value;
-    var nueva_fecha = document.getElementById("nueva_fecha").value;
+    var nuevo_apellidos = document.getElementById("nuevo_apellidos").value;
+    var nueva_contraseña = document.getElementById("nueva_contraseña").value;
+    var nuevo_dni = document.getElementById("nuevo_dni").value;
+    var nuevo_nacimiento = document.getElementById("nuevo_nacimiento").value;
+    var nuevo_email = document.getElementById("nuevo_email").value;
+    var nuevo_telefono = document.getElementById("nuevo_telefono").value;
+    var nueva_empresa = document.getElementById("nueva_empresa").value;
+    var nuevo_tutor = document.getElementById("nuevo_tutor").value;
+    var nuevo_dual = document.getElementById("nuevo_dual").value;
+    var nueva_fct = document.getElementById("nueva_fct").value;
+    var nueva_observaciones = document.getElementById("nueva_observaciones").value;
     var table = document.getElementById("data_table");
     var table_len = (table.rows.length) - 1;
     var row = table.insertRow(table_len).outerHTML = "<tr id='row" + table_len + "'><td id='nombre_row" + table_len + "'>" +
-        nuevo_nombre + "</td><td id='precio_row" + table_len + "'>" + nuevo_precio + "</td><td id='cantidad_row" + table_len + "'>" +
-        nueva_cantidad + "</td><td id='fecha_row" + table_len + "'>" + nueva_fecha +
+        nuevo_nombre + "</td><td id='apellidos_row" + table_len + "'>" + nuevo_apellidos + "</td><td id='contraseña_row" + table_len + "'>" +
+        nueva_contraseña + "</td><td id='dni_row" + table_len + "'>" + nuevo_dni +"</td><td id= 'nacimiento_row" + table_len + "'>" + nuevo_nacimiento  + 
+        "</td><td id= 'email_row" + table_len + "'>" + nuevo_email +"</td><td id= 'telefono_row" + table_len + "'>" + nuevo_telefono +
+        "</td><td id= 'empresa_row" + table_len + "'>" + nueva_empresa +"</td><td id= 'tutor_row" + table_len + "'>" + nuevo_tutor +
+        "</td><td id= 'dual_row" + table_len + "'>" + nuevo_dual + "</td><td id= 'fct_row" + table_len + "'>" + nueva_fct +
+        "</td><td id= 'observaciones_row" + table_len + "'>" + nueva_observaciones +       
         "</td><td class='acciones'><button class='edit' onclick='edit_row(" + table_len + ");' id='edit_button" + table_len+1 + "'><i class='fa-solid fa-pen-to-square'></i></button> <button class='save' onclick='save_row(" + table_len + ");' id='save_button" + table_len + "'><i class='fa-solid fa-floppy-disk'></i></button> <button class='delete' onclick='delete_row(" + table_len + ");'><i class='fa-solid fa-trash'></i></button></td></tr>";
     document.getElementById("nuevo_nombre").value = "";
-    document.getElementById("nuevo_precio").value = "";
-    document.getElementById("nueva_cantidad").value = "";
-    document.getElementById("nueva_fecha").value = "";
+    document.getElementById("nuevo_apellidos").value = "";
+    document.getElementById("nueva_contraseña").value = "";
+    document.getElementById("nuevo_dni").value = "";
+    document.getElementById("nuevo_nacimiento").value = "";
+    document.getElementById("nuevo_email").value = "";
+    document.getElementById("nuevo_telefono").value = "";
+    document.getElementById("nueva_empresa").value = "";
+    document.getElementById("nuevo_tutor").value = "";
+    document.getElementById("nuevo_dual").value = "";
+    document.getElementById("nueva_fct").value = "";
+    document.getElementById("nuevo_observaciones").value = "";
 }
