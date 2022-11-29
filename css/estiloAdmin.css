@@ -1,0 +1,51 @@
+:root {
+    --color-background: lightblue;
+    --color-tr: lightblue;
+    --color-th: blue;
+    --color-borde: blue;
+}
+
+table {
+    width: 80%;
+    background-color: var(--color-background);
+    text-align: center;
+    margin-top: 12%;
+    margin-bottom: 23%;
+    border: 6px solid var(--color-borde);
+}
+
+html {
+    background-image: radial-gradient(circle, #4ba0af, #335fa665);
+}
+
+input{
+    padding: 3%;
+}
+
+th {
+    background-color: var(--color-th);
+    color: white;
+
+}
+
+tr{
+    height: 6vh;
+    font-size: 1.2em;
+}
+
+tr:hover {
+    background-color: var(--color-tr);
+}
+.add{
+    padding: 2% 30%;
+    font-size: 1.1em;
+    font-weight: 700;
+}
+.acciones button{
+    padding: 4% 8%;
+    font-size: 0.8em;
+}
+#footer{
+    text-align: center;
+  }
+  
