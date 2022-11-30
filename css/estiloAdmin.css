@@ -1,21 +1,20 @@
 :root {
     --color-background: lightblue;
+    --color-hover: rgb(128, 187, 209);
     --color-tr: lightblue;
     --color-th: blue;
     --color-borde: blue;
 }
 
 button {
-    background-color: rgb(13, 136, 177);
     border: none;
     color: black;
-    padding: 15px 32px;
+    padding: 15px 25px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 16px;
-  margin-left: 700px;
-  }
+    
+}
 
 table {
     width: 80%;
@@ -30,7 +29,7 @@ html {
     background: url(https://fondosmil.com/fondo/31951.jpg);
 }
 
-input{
+input {
     padding: 3%;
 }
 
@@ -40,7 +39,7 @@ th {
 
 }
 
-tr{
+tr {
     height: 6vh;
     font-size: 1.2em;
 }
@@ -48,16 +47,29 @@ tr{
 tr:hover {
     background-color: var(--color-tr);
 }
-.add{
+
+.add {
     padding: 2% 30%;
     font-size: 1.1em;
     font-weight: 700;
 }
-.acciones button{
-    padding: 4% 8%;
-    font-size: 0.8em;
+
+.acciones{
+    display: flex;
 }
-#footer{
+.acciones button {
+    background-color: lightblue;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: all 0.3s;
+    border-radius: 50px;
+}
+.acciones button:hover {
+    background-color: var(--color-hover);
+    transition: all 0.3s;
+
+}
+
+#footer {
     text-align: center;
-  }
-  
+}
