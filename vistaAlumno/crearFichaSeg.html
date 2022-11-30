@@ -4,19 +4,18 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <!-- CSS FILES -->
+    <title>Ficha Alumno</title>
+   
     <link rel="preconnect" href="https://fonts.googleapis.com">
-
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
+    
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400;700;900&display=swap" rel="stylesheet">
-
-    <!-- Main css -->
-    <link rel="stylesheet" href="css/estiloHome.css">
     <link href="https://fonts.googleapis.com/css?family=Lora|Merriweather:300,400" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/63e77c34c9.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="css/estiloAdmin.css">
+   
+    <link rel="stylesheet" href="../css/estiloAdmin.css">
+    <link rel="stylesheet" href="../css/estiloHome.css">
+   
+    <script src="https://kit.fontawesome.com/63e77c34c9.js" crossorigin="anonymous"></script>>
     
 
     
@@ -48,6 +47,42 @@
 
    
 
+      <div id="wrapper">
+        <table align='center' cellpadding=6 id="data_table" border=0>
+            <tr>
+                <th>SEMANA </th>
+                <th>DIA</th>
+                <th >Tarea Realizada</th>
+                <th >TUTOR</th>
+                <th >EMPRESA</th>
+                <th >acciones</th>
+              </tr>
+            <tr id="row1">
+                <td id="semana_row1">11/14/2022</td>
+                <td id="dia_row1">Martes</td>
+                <td id="tarea_row1">Instalacion de aplicaciones necesarias</td>
+                <td id="tutor_row1">Francisco</td>
+                <td id="empresa_row1">DEKRA</td>
+                <td class="acciones">
+                    <button class="edit" onclick="edit_row('1');" id="edit_button1"><i class="fa-solid fa-pen-to-square"></i></button>
+                    <button class="save" onclick="save_row('1');" id="save_button1"><i class="fa-solid fa-floppy-disk"></i></button>
+                    <button class="delete" onclick="delete_row('1');"><i class="fa-solid fa-trash"></i></button>
+                </td>
+            </tr>
+       
+            <tr id="nuevos_campos">
+                <td><input type="week" id="nuevo_semana"></td>
+                <td><input type="date" id="nuevo_dia"></td>
+                <td><input type="text" id="nueva_tarea"></td>
+                <td><input type="text" id="nueva_tutor"></td>
+                <td><input type="text" id="nueva_empresa"></td>
+                <td><button class="add" onclick="add_row();"><i class="fa-solid fa-plus"></i></button></td>
+            </tr>
+        </table>
+    </div>
+
+   
+    <script src="js/crearficha.js"></script>
 
     
 </body>
