@@ -1,4 +1,6 @@
 function edit_row(no) {
+    document.getElementById("edit_button" + no).style.display = "none";
+    document.getElementById("save_button" + no).style.display = "block";
     var semana = document.getElementById("semana_row" + no);
     var dia= document.getElementById("dia_row" + no);
     var tarea= document.getElementById("tarea_row" + no);
@@ -25,6 +27,8 @@ function save_row(no) {
     document.getElementById("tarea_row" + no).innerHTML = tarea_val;
     document.getElementById("tutor_row" + no).innerHTML = tutor_val;
     document.getElementById("empresa_row" + no).innerHTML = empresa_val;
+    document.getElementById("edit_button" + no).style.display = "block";
+    document.getElementById("save_button" + no).style.display = "none";
 }
 function delete_row(no) {
     document.getElementById("row" + no + "").outerHTML = "";
