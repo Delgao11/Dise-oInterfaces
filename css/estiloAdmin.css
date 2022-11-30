@@ -17,7 +17,7 @@ button {
 }
 
 table {
-    width: 80%;
+    width: 90%;
     background-color: var(--color-background);
     text-align: center;
     margin-top: 12%;
@@ -30,7 +30,14 @@ html {
 }
 
 input {
+    width: 80%;
+    text-align: center;
     padding: 3%;
+    background-color: lightblue;
+    outline: none;
+    border: none;
+    border-bottom: 2px white solid;
+    margin-right: 10px;
 }
 
 th {
@@ -41,17 +48,25 @@ th {
 
 tr {
     height: 6vh;
-    font-size: 1.2em;
+    font-size: 1.1em;
 }
+
 
 tr:hover {
     background-color: var(--color-tr);
 }
 
 .add {
-    padding: 2% 30%;
-    font-size: 1.1em;
+    padding: 4% 33%;
+    font-size: 1.3em;
     font-weight: 700;
+    border-radius: 50px;
+    background-color: lightblue;
+}
+.add:hover {
+    background-color: var(--color-hover);
+    transition: all 0.3s;
+
 }
 
 .acciones{
@@ -70,6 +85,9 @@ tr:hover {
 
 }
 
+th{
+    font-size: 1.1em;
+}
 #footer {
     text-align: center;
 }
