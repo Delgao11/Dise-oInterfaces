@@ -9,7 +9,7 @@ function login() {
     username = username.replace(/\s+/g, '')
     console.log(password);
     if (password == "1234" && username == "alumno") {
-        window.location.href = "homeAlumno.html";
+        window.location.href = "vistaAlumno/fichaAlumno.html";
     } else if (password == "1234" && (username == "profesor")) {
         window.location.href = "homeProfe.html";
     } else {
