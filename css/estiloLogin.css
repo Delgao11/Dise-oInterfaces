@@ -27,11 +27,6 @@ h1 {
     letter-spacing: 2px;
     }
 
-    
-
- 
-   
-
     p {
         color: #777;
         font-size: 15px;
@@ -42,10 +37,10 @@ h1 {
 
 :root{
     --color-inputs: #FFFFFF00;
-    --color-barra: blue;
+    --color-barra: white;
     --color-separacion-inputs: blue;
-    --color-icons: blue;
-    --color-placeholder: blue;
+    --color-icons: white;
+    --color-placeholder: white;
     --fuente-main: 'Comfortaa', cursive;
 }
 /* Para cambiar la fuente de los placeholder */
@@ -61,7 +56,7 @@ h1 {
 }
 
 body{
-    background: url(https://media.istockphoto.com/id/498957103/es/foto/de-fondo.jpg?b=1&s=170667a&w=0&k=20&c=xlS9XQx1Y4GyKd6UIEhCpPCT98bdMUh7O1gMQArufxU=); 
+    background: url(https://static.vecteezy.com/system/resources/previews/002/048/637/non_2x/multicolor-geometric-rumpled-triangular-low-poly-style-gradient-illustration-graphic-background-polygonal-design-vector.jpg); 
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -227,13 +222,13 @@ body{
     font-weight: 500;
     border: 3px solid var(--color-icons);
     border-radius: 50px;
-    color: white;
+    color: black;
     background-color: var(--color-barra);
     cursor: pointer;
 }
 .boton-login:hover{
     transition: all 0.5s;
-    background-color: white;
+    background-color: blue;
     color: var(--color-icons);
     border: 3px solid var(--color-icons);
 }
