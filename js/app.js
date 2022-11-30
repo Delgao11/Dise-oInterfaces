@@ -9,10 +9,12 @@ function login() {
     username = username.replace(/\s+/g, '')
     console.log(password);
     if (password == "1234" && username == "alumno") {
-        window.location.href = "vistaAlumno/fichaAlumno.html";
-    } else if (password == "1234" && (username == "profesor")) {
-        window.location.href = "homeProfe.html";
-    } else {
+        window.location.href = "vistaAlumno/seguimientoAlumno.html";
+    } else if (password == "1234" && username == "profesor") {
+        window.location.href = "vistaProfesor/alumnosAsignados.html";
+    } else if(password == "1234" && username == "empresa"){
+        window.location.href = "vistaEmpresa/fichaEmpresa.html";
+    }else{
         alert("Usuario o contraseña no válido.");
     }
 }
