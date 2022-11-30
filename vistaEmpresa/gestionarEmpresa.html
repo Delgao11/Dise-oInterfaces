@@ -47,33 +47,39 @@
         </div>
     </section>
     <div id="wrapper">
-        <table align='center' cellpadding=5 id="data_table" border=10>
-
-            <tr>
-                <th>NOMBRE EMPRESA</th>
-                <td>Google</td>
-            </tr>
-            <tr>
-                <th>TELÉFONO</th>
-                <td>696777969</td>
-            </tr>
-
-            <tr>
-                <th>EMAIL</th>
-                <td>google@gmail.com</td>
-            </tr>
-
-            <tr>
-                <th>RESPONSABLE DE LA EMPRESA</th>
-                <td>Javier Moret Galán</td>
-            </tr>
-
-            <tr>
-                <th>OBSERVACIONES</th>
-                <td>Este alumno trabaja bien en equipo <br>
-                    y es puntual de vez en cuando.</td>
-            </tr>
-        </table>
+        <div id="wrapper">
+            <table align='center' cellpadding=6 id="data_table" border=0>
+                <tr>
+                    <th>NOMBRE EMPRESA </th>
+                    <th>TELÉFONO</th>
+                    <th>EMAIL</th>
+                    <th>RESPONSABLE DE LA EMPRESA</th>
+                    <th>OBSERVACIONES</th>
+                    <th>ACCIONES</th>
+                  </tr>
+                <tr id="row1">
+                    <td id="semana_row1">YPEH</td>
+                    <td id="dia_row1">697854621</td>
+                    <td id="tarea_row1">ypeh@gmail.com</td>
+                    <td id="tutor_row1">Raúl</td>
+                    <td id="empresa_row1">El alumno trabaja bien y es puntual</td>
+                    <td class="acciones">
+                        <button class="edit" onclick="edit_row('1');" id="edit_button1"><i class="fa-solid fa-pen-to-square"></i></button>
+                        <button class="save" onclick="save_row('1');" id="save_button1"><i class="fa-solid fa-floppy-disk"></i></button>
+                        <button class="delete" onclick="delete_row('1');"><i class="fa-solid fa-trash"></i></button>
+                    </td>
+                </tr>
+           
+                <tr id="nuevos_campos">
+                    <td><input type="text" id="nuevo_semana"></td>
+                    <td><input type="text" id="nuevo_dia"></td>
+                    <td><input type="text" id="nueva_tarea"></td>
+                    <td><input type="text" id="nueva_tutor"></td>
+                    <td><input type="text" id="nueva_empresa"></td>
+                    <td><button class="add" onclick="add_row();"><i class="fa-solid fa-plus"></i></button></td>
+                </tr>
+            </table>
+        </div>
     </div>
 </body>
 </html>
