@@ -14,7 +14,6 @@
 
     <!-- Main css -->
     <link rel="stylesheet" href="css/estilosHome.css">
-    <link href="css/estilosCatalogo.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Lora|Merriweather:300,400" rel="stylesheet">
     <script src="https://kit.fontawesome.com/63e77c34c9.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/estiloAdmin.css">
@@ -22,6 +21,8 @@
     
 </head>
 <body>
+
+    
     
     <div id="wrapper">
         <table align='center' cellpadding=1 id="data_table" border=0>
@@ -54,32 +55,14 @@
                 <td id="fct_row1">120</td>
                 <td id="observaciones_row1">Este alumno es puntual y trabaja muy bien en equipo</td>
                 <td class="acciones">
-                    <button class="edit" onclick="edit_row('1');" id="edit_button1"><i class="fa-solid fa-pen-to-square"></i></button>
-                    <button class="save" onclick="save_row('1');" id="save_button1"><i class="fa-solid fa-floppy-disk"></i></button>
-                    <button class="delete" onclick="delete_row('1');"><i class="fa-solid fa-trash"></i></button>
+                    
                 </td>
             </tr>
 
-            <tr id="nuevos_campos">
-                <td><input type="text" id="nuevo_nombre"></td>
-                <td><input type="text" id="nuevo_apellidos"></td>
-                <td><input type="text" id="nueva_contraseña"></td>
-                <td><input type="text" id="nuevo_dni"></td>
-                <td><input type="date" id="nuevo_nacimiento"></td>
-                <td><input type="text" id="nuevo_email"></td>
-                <td><input type="number" id="nueva_telefono"></td>
-                <td><input type="text" id="nueva_empresa"></td>
-                <td><input type="text" id="nuevo_tutor"></td>
-                <td><input type="number" id="nuevo_dual"></td>
-                <td><input type="number" id="nueva_fct"></td>
-                <td><input type="text" id="nueva_observaciones"></td>
-                <td><button class="add" onclick="add_row();"><i class="fa-solid fa-plus"></i></button></td>
-            </tr>
 
         </table>
     </div>
 
-    <script src="js/appAdmin.js"></script>
 
     
 </body>
