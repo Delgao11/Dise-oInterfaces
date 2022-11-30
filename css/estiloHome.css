@@ -1,11 +1,12 @@
 
+
 body {
-    background: #ffffff;
 font-family: 'Lora', serif;
 font-style: normal;
     font-weight: 300;
 overflow-x: hidden;
 }
+
 
 .nav{
 display: flex;
