@@ -108,5 +108,5 @@ function add_row() {
     document.getElementById("nuevo_tutor").value = "";
     document.getElementById("nuevo_dual").value = "";
     document.getElementById("nueva_fct").value = "";
-    document.getElementById("nuevo_observaciones").value = "";
+    document.getElementById("nueva_observaciones").value = "";
 }
